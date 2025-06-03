@@ -12,14 +12,15 @@ WorkPulse is a web application designed to streamline task management and enhanc
 
 | Admin                                                                                                     | Employee                                                                                                   |
 | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| ![Image 3](assets/Signup.png)                                             |
-| ![Image 3](assets/AdminLogin.png) | ![Image 10](assets/EmployeeLogin.png) |
+| ![Image 3](assets/Signup.png)     |![Image 10](assets/EmployeeLogin.png)                                       |
+| ![Image 3](assets/AdminLogin.png) | ![Image 10](assets/) |
 | ![Image 4](assets/RegisterEmployee.png) | ![Image 11]() |
-| ![Image 5](assets/Employees.png) | ![Image 12]() |
-| ![Image 6](assets/Employee1.png) | ![Image 13]() |
-| ![Image 7](assets/Employee2.png) | ![Image 14]() |
-| ![Image 8](assets/Employee3.png) | ![Image 15]() |
-| ![Image 9](assets/AdminProfile.png) | ![Image 15]() |                                                                                                          |
+| ![Image 5](assets/AdminDashboard.png) | ![Image 12]() |
+| ![Image 6](assets/Employees.png) | ![Image 13]() |
+| ![Image 7](assets/Employee1.png) | ![Image 14]() |
+| ![Image 8](assets/Employee2.png) | ![Image 15]() |
+| ![Image 9](assets/Employee3.png) | ![Image 15]() |
+|                                     | ![Image 15]() |                                                                                                          |
 
 ## Features
 
