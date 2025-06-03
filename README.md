@@ -124,7 +124,7 @@ The server will be running on http://localhost:8800
 ### 3. Configure the Client
 
 ```bash
-cd ../client
+cd client
 ```
 
 Create a `.env` file in the client folder:
