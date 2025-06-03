@@ -1,6 +1,8 @@
 # WorkPulse
 
-WorkPulse is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently.
+**WorkPulse** is a powerful, intuitive web application designed to **streamline daily task tracking** and **enhance workplace productivity**. It bridges the communication gap between employers and employees by offering an efficient system for **task management, activity monitoring, and performance tracking** — all in real-time.
+
+Whether you're managing a remote team or running an in-office setup, WorkPulse empowers **administrators to monitor employee tasks visually** and **employees to log work effortlessly**. With built-in analytics, profile management, and dynamic filtering, WorkPulse makes workforce oversight not just possible — but productive.
 
 #### Web Link: 
 
@@ -28,75 +30,152 @@ WorkPulse is a web application designed to streamline task management and enhanc
 | ![Admin Profile](assets/AdminProfile.png)                                                   |                                                                                              |
                                                                                                          |
 
-## Features
+## 🌟 Features
 
-- User Authentication:
+WorkPulse is packed with features that simplify team productivity tracking and empower seamless collaboration between administrators and employees.
 
-  - Admin Login: Admins can access the system using their unique username and password to manage employee data and tasks.
+### 🔐 User Authentication
 
-  - Employee Login: Employees can log in with their credentials to add and view their tasks.
+- **Admin Login**: Secure access for administrators using a unique email and password to manage employees and oversee all activity.
+- **Employee Login**: Employees log in with their credentials to access personalized dashboards and task functionality.
 
-- Employee Management:
+### 👥 Employee Management (Admin Only)
 
-  - Admin Dashboard: The admin has the ability to add employees, deactivate accounts, and view a list of all employees.
-  - Employee Profile Update: Employees can update their profile information and password, except for the email ID.
+- **Admin Dashboard**: A centralized hub where admins can register new employees, deactivate or reactivate accounts, and view comprehensive employee data.
+- **Profile Management**: Employees can update personal details (excluding their email) and securely change their passwords anytime.
 
-- Task Management:
-  - Add Tasks: Employees can log tasks for each day, including task description, type (break, meeting, or work), start time, and duration.
-  - Date Filtering: Users can filter and view tasks and associated graphical information for specific dates.
-- Graphical Information:
-  - Pie Charts: Two pie charts display task distribution for the current day and the previous day, categorized by break, meeting, and work.
-  - Stacked Bar Chart: A stacked bar chart provides a weekly overview, showing the distribution of not working (including breaks), working (work tasks), and meetings.
+### 🗂️ Task Management
 
-## Getting Started
+- **Add Daily Tasks**: Employees can log detailed tasks, specifying:
+  - Task description  
+  - Type (`Work`, `Meeting`, or `Break`)
+  - Start time
+  - Duration
 
-### Pre-requisites
+- **Date Filtering**: Quickly filter tasks by date to view activity logs and performance insights from any given day.
 
-1. Install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/).
-2. Create a [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account and set up a cluster.
+### 📊 Visual Analytics & Reporting
 
-### Clone the repository
+- **Daily Task Insights**:
+  - **Pie Chart - Today**: Visual breakdown of current day’s task distribution.
+  - **Pie Chart - Yesterday**: Compare task types between yesterday and today for performance tracking.
 
-1. Clone the repository: `git clone https://github.com/rishavchanda/Trackify.git`
+- **Weekly Overview (Stacked Bar Chart)**:
+  - A clear graphical representation of:
+    - **Work** time
+    - **Meetings**
+    - **Non-working** time (including breaks)
+  - Enables both admins and employees to identify productivity patterns and optimize time allocation.
 
-### Configure the client
+With real-time tracking and insightful analytics, WorkPulse helps teams work smarter, not just harder.
 
-1. Navigate to client folder: `cd client`
-2. Build the docker image for the client in dev mode: `docker build -f Dockerfile.dev -t trackify-react-image .`
-3. Set up and configure the environment variables, create a `.env` file in the client folder and add the following environment variables:
 
+# 🚀 Getting Started
+
+Follow these steps to set up and run the WorkPulse application on your local machine.
+
+## 📦 Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for the cloud database
+- A code editor like [VS Code](https://code.visualstudio.com/)
+
+---
+
+## 🔧 Installation Steps
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/v-a-dinesh/WorkPulse.git
+cd WorkPulse
 ```
-REACT_APP_API_URL = http://localhost:8800/api
+
+### 2. Configure the Server
+
+```bash
+cd server
 ```
 
-### Configure the server
+Create a `.env` file in the server folder with the following variables:
 
-1. Navigate to server folder: `cd server`
-2. Build the docker image for the server in dev mode: `docker build -f Dockerfile.dev -t trackify-server-image .`
-3. Set up the database and configure the environment variables by following the instructions in the next steps.
-
-### Set up the database
-
-1. Create a MongoDB Atlas account and set up a cluster.
-2. Create a `.env` file in the server folder and add the following environment variables:
-
-```
-MONGO_URL = <MongoDB connection string>
+```env
+PORT=8800
+MONGO_URL=<Your MongoDB Atlas connection string>
+JWT_SECRET=<Your JWT secret key>
+EMAIL=<Admin email for sending mail (Nodemailer)>
+PASSWORD=<Email password or App password>
 ```
 
-### Run the application
+Install backend dependencies:
 
-1. Navigate to the root folder: `cd ..`
-2. Run the docker-compose file: `docker-compose -f docker-compose.yml -f docker-compose-dev.yml  up --build`
-3. Open the application in your browser at `http://localhost:3000`
-4. Server will be running at `http://localhost:8800`
-5. To stop the application, press `Ctrl + C` in the terminal.
+```bash
+npm install
+```
 
-## Technologies Used
+Start the server:
 
-- Front-End: ReactJS, HTML, CSS, JavaScript
-- Back-End: Node.js, Express.js
-- Database: MongoDB
+```bash
+npm start
+```
+
+The server will be running on http://localhost:8800
+
+### 3. Configure the Client
+
+```bash
+cd ../client
+```
+
+Create a `.env` file in the client folder:
+
+```env
+REACT_APP_API_URL=http://localhost:8800/api
+```
+
+Install frontend dependencies:
+
+```bash
+npm install
+```
+
+Start the client:
+
+```bash
+npm start
+```
+
+The frontend will be available at http://localhost:3000
+
+
+
+## 🛠️ Technologies Used
+
+WorkPulse is built with a modern web development stack, combining robust backend services with a dynamic, responsive frontend.
+
+### 🌐 Front-End
+- **ReactJS**: Core library for building user interfaces using reusable components.
+- **HTML5 & CSS3**: Markup and styling for structured and responsive layouts.
+- **JavaScript (ES6+)**: For dynamic content rendering and event handling.
+- **Axios**: For making secure HTTP requests to the backend.
+- **React Router DOM**: Enables client-side routing and seamless navigation between pages.
+- **Chart.js**: Used for rendering interactive Pie and Stacked Bar Charts for task visualization.
+
+### ⚙️ Back-End
+- **Node.js**: JavaScript runtime environment for executing server-side code.
+- **Express.js**: Web framework for building APIs and handling routing, middleware, and request logic.
+- **JWT (JSON Web Tokens)**: For secure authentication and authorization.
+- **Bcrypt.js**: Used for hashing passwords to ensure security.
+
+### 🗄️ Database
+- **MongoDB**: NoSQL database to store user profiles, tasks, and session data.
+- **Mongoose**: ODM (Object Data Modeling) library for MongoDB that simplifies schema design and data validation.
+
+### 🔐 Additional Tools & Libraries
+- **Dotenv**: For environment variable management.
+- **Nodemailer**: Enables email sending functionality (e.g., for password reset).
+- **Cors & Helmet**: Security-focused middleware to handle cross-origin requests and secure HTTP headers.
+
 
 ## Contributing
 
