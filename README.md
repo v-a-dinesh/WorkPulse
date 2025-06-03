@@ -9,8 +9,10 @@ WorkPulse is a web application designed to streamline task management and enhanc
 | Email: workpulsetech@gmail.com | Email: dineshvaworkpulse@gmail.com |
 | Password- Admin@123            | Password- Employee@123             |
 
-| Login/Signup                                                                                                     |                                                                                                           |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Login/Signup                                                                                                     |                                                                                                           
+| --------------------------------------------------------------------------------------------------------- |
+|  ![Image 0](assets/Signup.png)
+ --------------------------------------------------------------------------------------------------------- |
 | ![Image 1](assets/AdminLogin.png) | ![Image 2](assets/EmployeeLogin.png) |
 
 | Admin                                                                                                     | Employee                                                                                                   |
