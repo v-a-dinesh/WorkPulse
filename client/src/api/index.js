@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8800/api/"
+  baseURL: "https://workpulse-nyvk.onrender.com/api/"
 });
 
 export const AdminRegister = async (data) =>
