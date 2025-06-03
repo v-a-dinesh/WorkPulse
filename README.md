@@ -10,16 +10,22 @@ WorkPulse is a web application designed to streamline task management and enhanc
 | Password- Admin@123            | Password- Employee@123             |
 
 
-| **Admin**                                                                                   | **Signup**                            | **Employee**                                                                                 |
-|---------------------------------------------------------------------------------------------|----------------------------------------|----------------------------------------------------------------------------------------------|
-| ![Admin Login](assets/AdminLogin.png)                                                       | ![Signup](assets/Signup.png)           | ![Employee Login](assets/EmployeeLogin.png)                                                  |
-| ![Register Employee](assets/RegisterEmployee.png)                                           |                                        | ![Create Task](assets/CreateTask.png)                                                        |
-| ![Admin Dashboard](assets/AdminDashboard.png)                                               |                                        | ![Employee Dashboard 1](assets/EmployeeDash1.png)                                            |
-| ![Employees](assets/Employees.png)                                                          |                                        | ![Employee Dashboard 2](assets/EmployeeDash2.png)                                            |
-| ![Employee 1](assets/Employee1.png)                                                         |                                        | ![Employee Dashboard 3](assets/EmployeeDash3.png)                                            |
-| ![Employee 2](assets/Employee2.png)                                                         |                                        | ![Employee Profile](assets/EmployeeProfile.png)                                              |
-| ![Employee 3](assets/Employee3.png)                                                         |                                        | ![Image](assets/EmployeeDash3.png)                                                           |
-| ![Admin Profile](assets/AdminProfile.png)                                                   |                                        |                                                                                              |
+| **Signup**                          |
+|------------------------------------|
+| ![Signup](assets/Signup.png)       |
+
+<br/>
+
+| **Admin**                                                                                   | **Employee**                                                                                 |
+|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| ![Admin Login](assets/AdminLogin.png)                                                       | ![Employee Login](assets/EmployeeLogin.png)                                                  |
+| ![Register Employee](assets/RegisterEmployee.png)                                           | ![Create Task](assets/CreateTask.png)                                                        |
+| ![Admin Dashboard](assets/AdminDashboard.png)                                               | ![Employee Dashboard 1](assets/EmployeeDash1.png)                                            |
+| ![Employees](assets/Employees.png)                                                          | ![Employee Dashboard 2](assets/EmployeeDash2.png)                                            |
+| ![Employee 1](assets/Employee1.png)                                                         | ![Employee Dashboard 3](assets/EmployeeDash3.png)                                            |
+| ![Employee 2](assets/Employee2.png)                                                         | ![Employee Profile](assets/EmployeeProfile.png)                                              |
+| ![Employee 3](assets/Employee3.png)                                                         |                                                                                              |
+| ![Admin Profile](assets/AdminProfile.png)                                                   |                                                                                              |
                                                                                                          |
 
 ## Features
